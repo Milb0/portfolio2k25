@@ -1,16 +1,50 @@
-# React + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **personal portfolio website** built using **React** and **Vite**.  
+It showcases my projects, skills, and contact information in a modern, responsive, and interactive layout.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Deployment
 
-## React Compiler
+🔗 **Live website:**  
+https://milb-portfolio2k25caw.netlify.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Project Description
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This portfolio is designed to present my work and technical skills in a clean and professional way.  
+It features smooth navigation between sections, subtle animations, and a consistent visual style across the entire website.
+
+The website includes dedicated sections for featured projects, technical skills, and a contact form that allows visitors to reach out directly.
+
+The layout is fully responsive and optimized for desktop, tablet, and mobile devices.
+
+---
+
+## Features
+
+- Responsive hero section with personal introduction
+- Projects section with GitHub and live demo links
+- Skills section with categorized technologies and icons
+- Contact form with validation and success feedback
+- Smooth scrolling navigation
+- Subtle animations and hover interactions
+- Clean and consistent UI design
+
+---
+
+## Technologies Used
+
+- React
+- Vite
+- Tailwind CSS
+- CSS Modules
+- JavaScript
+
+---
+
+## Author
+
+Developed by **Mohamed Ilyes Bennacer**
