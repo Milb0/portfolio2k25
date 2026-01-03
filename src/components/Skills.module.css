@@ -1,0 +1,115 @@
+.section {
+  background-color: transparent;
+}
+
+.title {
+  color: #037ef3;
+}
+
+.subtitle {
+  text-align: center;
+  color: #52565f;
+  margin-top: 8px;
+}
+
+/* Fade-in */
+.fadeIn {
+  animation: fadeUp 0.6s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Category title */
+.categoryTitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.categoryLine {
+  width: 28px;
+  height: 3px;
+  background-color: #037ef3;
+  border-radius: 999px;
+}
+
+/* Grid */
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* Skill card (Projects-style) */
+.skillCard {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+
+  background-color: #f9fafb; /* contact card surface */
+  border-radius: 16px;
+
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.skillCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(3, 126, 243, 0.14);
+}
+
+/* Icon box */
+
+.iconWrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.2s ease;
+}
+
+.skillCard:hover .iconWrapper {
+  transform: translateX(2px);
+}
+
+/* SVG icon */
+.iconImg {
+  width: 22px;
+  height: 22px;
+}
+
+/* Fallback arrow */
+.fallbackIcon {
+  color: #037ef3;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Text */
+.skillName {
+  font-weight: 500;
+  color: #111827;
+  line-height: 1.3;
+}

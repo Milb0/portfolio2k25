@@ -1,0 +1,49 @@
+.link {
+  /* global variables are defined to keep this module self-contained */
+  --primary: #037ef3;
+  --muted: #52565f;
+  --accent: #025ec2;
+  --underline-h: 2px;
+  color: var(--muted);
+  font-weight: 500;
+  position: relative;
+  transition: color 0.18s ease, opacity 0.18s ease;
+}
+
+.link:hover {
+  color: var(--primary);
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  box-shadow: 0 0 0 4px rgba(3, 126, 243, 0.06);
+  outline: 3px solid rgba(3, 126, 243, 0.12);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.active {
+  color: var(--primary);
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: var(--underline-h);
+  background-color: var(--primary);
+  transition: background-color 0.18s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link,
+  .active::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}

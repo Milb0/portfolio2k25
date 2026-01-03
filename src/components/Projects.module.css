@@ -1,0 +1,120 @@
+.section {
+  background-color: transparent;
+}
+
+.title {
+  color: #037ef3;
+}
+
+/* CARD */
+.card {
+  position: relative;
+  background-color: #f9fafb; /* same as contact */
+  border-radius: 16px;
+  padding: 28px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px rgba(3, 126, 243, 0.14);
+}
+
+/* FEATURED BADGE */
+.featured {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(3, 126, 243, 0.1);
+  color: #037ef3;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+/* TEXT */
+.description {
+  color: #52565f;
+  line-height: 1.6;
+}
+
+/* TECH TAG */
+.tech {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  color: #52565f;
+  font-size: 0.8rem;
+}
+
+/* LINKS */
+.link {
+  color: #037ef3;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.live {
+  color: #025ec2;
+  font-weight: 500;
+}
+
+.live:hover {
+  text-decoration: underline;
+}
+
+/* ACTIONS */
+.actions {
+  display: flex;
+  gap: 14px;
+}
+
+/* ICON BUTTON */
+.iconWrapper {
+  position: relative;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  color: #52565f;
+  transition: all 0.2s ease;
+}
+
+.icon:hover {
+  color: #037ef3;
+  border-color: #037ef3;
+  background-color: rgba(3, 126, 243, 0.05);
+}
+
+/* TOOLTIP */
+.tooltip {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111827;
+  color: #ffffff;
+  font-size: 0.7rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.iconWrapper:hover .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(4px);
+}

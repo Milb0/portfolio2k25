@@ -1,0 +1,20 @@
+.footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+}
+
+.name {
+  color: #037ef3;
+}
+
+.text {
+  color: #52565f;
+}
+
+.link {
+  color: #52565f;
+}
+
+.link:hover {
+  color: #037ef3;
+}
